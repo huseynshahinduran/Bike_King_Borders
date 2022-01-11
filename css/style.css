@@ -1,0 +1,973 @@
+/*Body start*/
+
+body {
+
+    background-image: url('../images/Images-20201007-1/product_5.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/*Body end*/
+
+/*---------------------------------------------------------*/
+
+/*Wrapper start*/
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    
+    "header     header      header      header"
+
+    "nav        nav          nav        nav"
+
+    "area1      area1       area1       area1"
+
+    "image      image       section     section"
+
+    "image      image       section     section"
+
+    "area2      area2       area2       area2"
+
+    "line       line        line        line"
+
+    "footer     footer      footer      footer"
+
+    ;
+}
+
+.wrapper1 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    
+    "header     header      header      header"
+
+    "nav        nav          nav        nav"
+
+    "p1area1    p1area1      p1area1    p1area1"
+
+    "product1   product1     product1    product1"
+
+    "product2   product2     product2    product2"
+
+    "product3   product3     product3    product3"
+
+    "line       line         line        line"
+
+    "footer     footer      footer      footer"
+
+    ;
+}
+
+.wrapper2 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    
+    "header     header      header      header"
+
+    "nav        nav          nav        nav"
+
+    "bike1      bike1       bike1       bike1"
+
+    "bike2      bike2       bike2       bike2"
+
+    "bike3      bike3       bike3       bike3"
+
+    "line       line         line        line"
+
+    "footer     footer      footer      footer"
+
+    ;
+}
+
+.wrapper3 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-areas: 
+    
+    "header     header      header      header"
+
+    "nav        nav         nav         nav"
+
+    "contact    contact     contact     contact"
+
+    "map        map         map         map"
+
+    "line       line        line        line"
+
+    "footer     footer      footer      footer"
+
+    ;
+}
+
+
+/*Wrapper end*/
+
+/*---------------------------------------------------------*/
+
+/*Header start*/
+
+header {
+
+    background-image: url('../images/Banner-20201007-1/banner-2.1.png');
+    grid-area: header;
+    display: grid;
+    height: 330px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.logo {
+
+    width: 15%;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+.icon {
+    position: absolute;
+    top: auto;
+    right: 0%;
+    width: 300px;
+    display: flex;
+    margin-top: 150px;
+
+}
+
+.social-icon {
+
+    color: white;
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    right: 0;
+    margin: 2px;
+
+}
+
+.social-icon:hover {
+
+    opacity: 0.7;
+
+}
+
+.social-icon .facebook {
+
+    width: 98%;
+    
+}
+
+.social-icon .twitter {
+
+    width: 98%;
+
+}
+
+.social-icon .instagram {
+
+    width: 98%;
+
+}
+
+/*Header end*/
+
+/*---------------------------------------------------------*/
+
+/*Navbar start*/
+
+nav {
+
+    background-color: #f36825;
+    grid-area: nav;
+
+}
+
+#position {
+
+    text-align: center;
+    line-height: 3.5em;
+    word-spacing: 5px;
+    font-size: 15px;
+
+}
+
+nav a {
+
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 25px 20px;
+
+}
+
+nav a:hover {
+
+    background-color: #0582e3;
+
+}
+
+/*Navbar end*/
+
+/*---------------------------------------------------------*/
+
+/*Index Page Start*/
+
+#area1 {
+
+    background: #fff;
+    grid-area: area1;
+    box-shadow: 10px    10px    5px    #00000094;
+    padding: 10px;
+    margin: 10px;
+    opacity: 95%;
+
+}
+
+#area1 p {
+
+    text-align: center;
+    font-size: large;
+
+}
+
+#area1h1 {
+
+    background: #f36825;
+    box-shadow: 10px    10px    5px    #00000094;
+    display: grid;
+    text-align: center;
+    color: white;   
+
+}
+
+.slider{
+    
+    grid-area: image;
+    background-color: white;
+    width: 850px;
+    height: 500px;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 10px;
+    margin: 10px;
+  
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 15s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+.navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+}
+
+.navigation-auto div{
+    border: 2px solid #f36825;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #f36825;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn1{
+    background: #f36825;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn1{
+    background: #f36825;
+}
+
+section {
+
+    background-color: #fff;
+    grid-area: section;
+    display: grid;
+    box-shadow: 10px    10px    5px    #00000094;
+    justify-items: center;
+    align-content: center;
+    opacity: 95%;
+    font-weight: bold;
+    margin-top: 10%;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+
+}
+
+#sectionHead {
+
+    background: #f36825;
+    box-shadow: 10px    10px    5px    #00000094;
+    text-align: center;
+    color: white;
+
+}
+
+#area2 {
+
+    background: #fff;
+    grid-area: area2;
+    box-shadow: 10px    10px    5px    #00000094;
+    padding: 10px;
+    margin: 10px;
+    opacity: 95%;
+
+}
+
+#area2 p {
+
+    text-align: center;
+    font-size: large;
+
+}
+
+#area2h2 {
+
+    background: #f36825;
+    box-shadow: 10px    10px    5px    #00000094;
+    display: grid;
+    text-align: center;
+    color: white;   
+
+}
+
+.line {
+
+    display: grid;
+    grid-area: line;
+    background-color: #f36825;
+    color: #f36825;
+    text-align: center;
+    height: 50px;
+
+}
+
+/*Index Page end*/
+
+/*---------------------------------------------------------*/
+
+/*Bike for Hire Page Start*/
+
+#p1area1 {
+
+    background: #fff;
+    grid-area: p1area1;
+    box-shadow: 10px    10px    5px    #00000094;
+    padding: 10px;
+    margin: 10px;
+    opacity: 95%;
+
+}
+
+#p1area1 p {
+
+    text-align: center;
+    font-size: large;
+
+}
+
+#product1 {
+
+    background: #fff;
+    grid-area: product1;
+    box-shadow: 10px    10px    5px    #00000094;
+    padding: 10px;
+    margin: 10px;
+    opacity: 95%;
+
+}
+
+#product1Head {
+
+    background: #f36825;
+    box-shadow: 10px    10px    5px    #00000094;
+    display: grid;
+    text-align: center;
+    color: white;   
+
+}
+
+#product1 p {
+
+    margin-top: 50px;
+    font-size: large;
+    text-align: center;
+
+}
+
+#product1 img {
+
+    float: left;
+    width: 800px;
+    height: 350px;
+    margin-bottom: 50px;
+
+}
+
+#product2 {
+
+    background: #fff;
+    grid-area: product2;
+    box-shadow: 10px    10px    5px    #00000094;
+    padding: 10px;
+    margin: 10px;
+    opacity: 95%;
+
+}
+
+#product2Head {
+
+    background: #f36825;
+    box-shadow: 10px    10px    5px    #00000094;
+    display: grid;
+    text-align: center;
+    color: white;   
+
+}
+
+#product2 p {
+
+    margin-top: 50px;
+    font-size: large;
+    text-align: center;
+
+}
+
+#product2 img {
+
+    float: left;
+    width: 600px;
+    height: 350px;
+    margin-bottom: 50px;
+
+}
+
+#product3 {
+
+    background: #fff;
+    grid-area: product3;
+    box-shadow: 10px    10px    5px    #00000094;
+    padding: 10px;
+    margin: 10px;
+    opacity: 95%;
+
+}
+
+#product3Head {
+
+    background: #f36825;
+    box-shadow: 10px    10px    5px    #00000094;
+    display: grid;
+    text-align: center;
+    color: white;   
+
+}
+
+#product3 p {
+
+    margin-top: 50px;
+    font-size: large;
+    text-align: center;
+
+}
+
+#product3 img {
+
+    float: left;
+    width: 500px;
+    height: 350px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+
+}
+/*Bike for Hire Page End*/
+
+/*---------------------------------------------------------*/
+
+/*Mountain & Kids Bikes Page Start*/
+
+#bike1 {
+
+    background: #fff;
+    grid-area: bike1;
+    box-shadow: 10px    10px    5px    #00000094;
+    padding: 10px;
+    margin: 10px;
+    opacity: 95%;
+
+}
+
+#bike1Head {
+
+    background: #f36825;
+    box-shadow: 10px    10px    5px    #00000094;
+    display: grid;
+    text-align: center;
+    color: white;   
+    text-transform: uppercase;
+
+}
+
+#bike1 p {
+
+    margin-top: 50px;
+    font-size: large;
+    text-align: left;
+    padding: 50px;
+    
+
+}
+
+#mountainBike1 {
+
+    float: left;
+    width: 600px;
+    height: 350px;
+    margin-right: 20px;
+    padding: 50px;
+
+}
+
+#bike2 {
+
+    background: #fff;
+    grid-area: bike2;
+    box-shadow: 10px    10px    5px    #00000094;
+    padding: 10px;
+    margin: 10px;
+    opacity: 95%;
+
+}
+
+#bike2Head {
+
+    background: #f36825;
+    box-shadow: 10px    10px    5px    #00000094;
+    display: grid;
+    text-align: center;
+    color: white;  
+    text-transform: uppercase; 
+
+}
+
+#bike2 p {
+
+    margin-top: 50px;
+    font-size: large;
+    text-align: left;
+    padding: 50px;
+
+}
+
+#mountainBike2 {
+
+    float: left;
+    width: 600px;
+    height: 350px;
+    margin-right: 20px;
+    padding: 50px;
+
+}
+
+#bike3 {
+
+    background: #fff;
+    grid-area: bike3;
+    box-shadow: 10px    10px    5px    #00000094;
+    padding: 10px;
+    margin: 10px;
+    opacity: 95%;
+
+}
+
+#bike3Head {
+
+    background: #f36825;
+    box-shadow: 10px    10px    5px    #00000094;
+    display: grid;
+    text-align: center;
+    color: white;   
+    text-transform: uppercase;
+
+}
+
+#bike3 p {
+
+    margin-top: 50px;
+    font-size: large;
+    text-align: left;
+    padding: 50px;
+
+}
+
+#mountainBike3 {
+
+    float: left;
+    width: 600px;
+    height: 350px;
+    margin-right: 20px;
+    padding: 50px;
+
+}
+
+#bike2 ul {
+
+    font-weight: bold;
+
+}
+
+#kidsBike1{
+
+    float: left;
+    width: 400px;
+    height: 350px;
+    margin-right: 20px;
+    padding: 50px;
+
+}
+
+#kidsBike2{
+
+    float: left;
+    width: 400px;
+    height: 350px;
+    margin-right: 20px;
+    padding: 50px;
+
+}
+
+#kidsBike3{
+
+    float: left;
+    width: 400px;
+    height: 350px;
+    margin-right: 20px;
+    padding: 50px;
+
+}
+
+/*Mountain & Kids Bikes Page End*/
+
+/*---------------------------------------------------------*/
+
+/*Servicing Page Start*/
+
+.contact-section{
+    grid-area: contact;
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-info{
+    
+    color: black;
+    max-width: 500px;
+    line-height: 65px;
+    padding-left: 50px;
+    font-size: 18px;
+}
+
+.contact-info i{
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.contact-form{
+    max-width: 700px;
+    margin-right: 50px;
+}
+
+.contact-info, .contact-form{
+    flex: 1;
+}
+
+.contact-form h2{
+    color: black;
+    text-align: left;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.contact-form .text-box{
+    background: #000;
+    color: #f36825;
+    border: none;
+    width: calc(50% - 10px);
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form .text-box:first-child{
+    margin-right: 15px;
+}
+
+.contact-form textarea{
+    background: #000;
+    color: #f36825;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    min-height: 200px;
+    max-height: 400px;
+    resize: vertical;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.contact-form .send-btn{
+    float: left;
+    background: #f36825;
+    color: #fff;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: background;
+    margin-bottom: 10px;
+}
+
+.contact-form .send-btn:hover{
+    background: #0582e3;
+}
+
+#status{
+    z-index: 1;
+    font-size: 18px;
+    padding: 20px 40px;
+    min-width: 420px;
+    position: fixed;
+    right: 0;
+    top: 10px;
+    border-radius: 4px;
+}
+
+#status.alert-success{
+    background: #d4edda;
+    border-left: 8px solid #3ad66e;
+    animation: status 4s ease forwards;
+}
+
+#status.alert-error{
+    background: #fff3cd;
+    border-left: 8px solid #ffa502;
+    animation: status 4s ease forwards;
+}
+
+#map {
+    grid-area: map;
+}
+
+/*Servicing Page End*/
+
+/*---------------------------------------------------------*/
+/*Footer start*/
+
+footer {
+
+    display: grid;
+    grid-area: footer;
+    background-image: url('../images/Banner-20201007-1/banner-1.1.png');
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative; 
+
+}
+
+footer h1 {
+
+    text-align: center;
+    color: white;
+    margin-top: 10%;
+
+}
+
+#copyright {
+
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10rem;
+
+}
+
+/*Footer end*/
+
+@media only screen and (max-width: 600px) {
+    
+    body {
+
+        background-image: url('../images/Images-20201007-1/product_5.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 50px 625px 250px 300px 200px 250px 750px auto;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "area1"
+        "image"
+        "image"
+        "section"
+        "section"
+        "area2"
+        "line"
+        "footer"
+        ;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .wrapper1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 50px 625px 250px 300px 200px 250px 750px auto;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "p1area1"
+        "product1"
+        "product1"
+        "product1"
+        "product2"
+        "product2"
+        "product3"
+        "line"
+        "footer"
+        ;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .wrapper2 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 50px 625px 250px 300px 200px 250px auto;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "bike1"
+        "bike1"
+        "bike2"
+        "bike2"
+        "bike2"
+        "bike2"
+        "bike3"
+        "bike3"
+        "line"
+        "footer"
+        ;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .contact-section{
+        flex-direction: column;
+    }
+
+    .contact-info, .contact-form{
+        margin: 20px 40px;
+    }
+
+    .contact-form .text-box{
+        width: 100%;
+    }
+
+    .wrapper3 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 50px 625px 250px 300px auto;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "contact"
+        "contact"
+        "contact"
+        "line"
+        "footer"
+        ;
+    }
+ 
+}

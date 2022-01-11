@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/jpg" href="images/bing_king_bordersbw-2.png">
+ </head>
+<body>
+
+    <div class="wrapper">
+
+        <header>
+
+            <a href="index.html">
+
+                <img src="images/bing_king_bordersbw-2.png" alt="Logo" class="logo">
+
+            </a>    
+
+            <div class="icon">
+                <a class="social-icon" href="https://en-gb.facebook.com/" target="_blank">
+                <img src="images/social media icone/facebook.png" alt="Facebook" class="facebook">
+                </a>
+            
+                <a class="social-icon" href="https://twitter.com/?lang=en-gb">
+                <img src="images/social media icone/twitter.png" alt="Twitter" class="twitter">
+                </a>
+            
+                <a class="social-icon" href="https://www.instagram.com/">
+                <img src="images/social media icone/instagram.png" alt="Instagram" class="instagram">
+                </a>
+            </div>
+
+        </header>
+
+        <nav>
+            <div id="position">
+                <a href="#">Home</a>
+                <a href="bikeForHire.html">Bike for Hire</a>
+                <a href="mountainBikes.html">Mountain Bikes</a>
+                <a href="kidsBikes.html">Kids Bikes</a>
+                <a href="servicing.html">Servicing</a>
+            </div>
+        </nav>
+        
+
+        <div id="area1">
+                    
+            
+            <div id="area1h1">
+                <h1>Welcom to Bike King Borders</h1>
+            </div>
+
+                <br>
+
+            <p>We are Bike King Borders, a small cycling company based in Galashiels in the Scottish Borders region.</p>
+
+        </div>
+        
+        <div class="slider">
+
+            <div class="slides">
+         
+                <input type="radio" name="radio_btn" id="radio1">
+                <input type="radio" name="radio_btn" id="radio2">
+                <input type="radio" name="radio_btn" id="radio3">
+                
+                <div class="slide first">
+                    <img src="images/Images-20201007-1/product_1.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/Images-20201007-1/product_2.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="images/Images-20201007-1/product_3.jpg" alt="">
+                </div>
+                
+                    <div class="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                
+            </div>
+            
+        </div>
+        
+    
+        <script type="text/javascript">
+        var counter =1;
+        setInterval(function(){
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if(counter > 4){
+                counter = 1;
+            }
+        }, 5000);
+        </script>
+
+        <section>
+
+            <div id="sectionHead">
+
+                <h1>Welcom to Bike King Borders</h1>
+
+            </div>
+
+            <ol>
+                <li>Trek Bicycle Corporation</li>
+                <li>Connondale</li>
+                <li>Kona Bikes</li>
+                <li>Colnago</li>
+                <li>Bianchi</li>
+            </ol>
+
+        </section>
+
+        <div id="area2">
+
+            <div id="area2h2">
+                <h1>About Us</h1>
+            </div>
+
+            <br>
+
+            <p>We are a quality bike shop in Scotland serving the whole UK for over 18 years. </p>
+            <p>We have a huge range of cycling essentials in stock with home delivery available on top cycling brands.</p>
+            <p>At Bike King Borders we do things simply. Our friendly at-mosphere awaits you where you can hire a bike, get your bike fixed or even buy a new one.</p>
+            <p>Take a closer look at our various bikes and bike accesso-ries.</p>
+
+        </div>
+
+        <div class="line">
+
+        </div>
+
+        <footer>
+
+            <p id="copyright">Bike King Borders © 2021</p>
+    
+        </footer>
+
+    </div>
+    
+</body>
+</html>
